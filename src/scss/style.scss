@@ -2,9 +2,55 @@
 @import 'vars';
 @import 'global';
 
-
-
-
+//start header
+.header{
+  min-height: 760px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+  }
+}
+.header__logo{
+  img{
+    width: 140px;
+    height: 110px;
+  }
+}
+.menu{
+  display: flex;
+  align-items: center;
+}
+.menu__list{
+  li{
+    display: inline-block;
+    & + li{
+      margin-left: 70px;
+    }
+  }
+  a{
+    color: #fff;
+  }
+}
+.header__info{
+  margin-top: 17px;
+}
+.header__title{
+  font-size: 72px;
+  line-height: 80px;
+  @include f700;
+}
+.header__text{
+  font-size: 32px;
+  line-height: 40px;
+  width: 360px;
+  @include f400;
+}
+//end header
 
 
 
