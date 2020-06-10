@@ -120,12 +120,10 @@
       position: relative;
       &::before{
         position: absolute;
-        content: '';
-        background-image: url(../img/arrow-down.svg);
-        width: 28px;
-        height: 26px;
-        right: -40px;
-        top: 10px;
+        content: "\f107";
+        font-family: 'icomoon';
+        right: -35px;
+        top: 3px;
       }
     }
   }
@@ -171,6 +169,111 @@
   }
 }
 // end purchase
+
+//  start footer
+.footer{
+  position: relative;
+  &__title{
+    margin-bottom: 20px;
+  }
+}
+.footer__content{
+  padding: 0 0 40px;
+}
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info{
+  min-width: 480px;
+  &-social{
+    height: 30px;
+    margin-bottom: 20px;
+    li{
+      display: inline-block;
+      & + li{
+        margin-left: 10px;
+      }
+    }
+    a svg{
+      width: 30px;
+      height: 30px;
+    }
+    path{
+      fill: #cccccc;
+    }
+  }
+}
+.link-instagram{
+  &:hover{
+    path{
+      fill: #f78035
+    }
+  }
+}
+.link-twitter{
+  &:hover{
+    path{
+      fill: #1da0f2
+    }
+  }
+}
+.link-youtube{
+  &:hover{
+    path{
+      fill: red;
+    }
+  }
+}
+.footer__list{
+  li{
+    margin-bottom: 10px;
+  }
+  a{
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+    letter-spacing: 0.25px;
+    padding-left: 35px;
+    position: relative;
+    &::before{
+      position: absolute;
+      font-family: 'icomoon';
+      left: 0;
+    }
+  }
+}
+.footer__phone{
+  &::before{
+    content: "\e942";
+  }
+}
+.footer__email{
+  &::before{
+    content: "\f003";
+  }
+}
+.footer__addess{
+  &::before{
+    content: "\e948";
+  }
+}
+.footer__map {
+  padding-top: 10px;
+  max-width: 660px;
+  width: 100%;
+  iframe{
+    width: 100%;
+   min-height: 230px;
+  }
+}
+.footer__copy{
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid $color-text;
+}
+//  end footer
+
 
 
 
