@@ -1,5 +1,4 @@
-
-
+$color-text: #b0b0b0;
 
 @mixin f200{
   font-family: 'Inter', sans-serif;
@@ -19,4 +18,9 @@
 @mixin f700{
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+}
+
+@mixin OpenSans{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }

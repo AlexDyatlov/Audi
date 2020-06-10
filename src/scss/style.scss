@@ -2,7 +2,7 @@
 @import 'vars';
 @import 'global';
 
-//start header
+// start header
 .header{
   min-height: 760px;
   background-repeat: no-repeat;
@@ -33,25 +33,25 @@
     }
   }
   a{
-    font-family: 'Open Sans', sans-serif;
+    @include OpenSans;
     color: #fff;
   }
 }
 .header__info{
   margin-top: 17px;
+  color: #fff;
 }
 .header__text{
   font-size: 32px;
   line-height: 40px;
   width: 360px;
 }
-//end header
+// end header
 
-//start description
+// start description
 .description{
   padding: 140px 0 40px;
   &__title{
-    color: #000;
     margin-bottom: 40px;
   }
 }
@@ -63,7 +63,6 @@
     max-width: 860px;
   }
   &__title{
-    color: #000;
     font-size: 24px;
     line-height: 32px;
     @include f700;
@@ -72,7 +71,6 @@
   &__text{
     font-size: 18px;
     line-height: 26px;
-    color: #000;
   }
   &__images{
     position: relative;
@@ -108,10 +106,71 @@
 .description-box--left .description-box__info{
   order: 1;
 }
-//end description
+// end description
 
-
-
+// start purchase
+.purchase{
+  padding: 0 0 100px;
+  &__title{
+    margin-bottom: 35px;
+    span{
+      font-size: 37px;
+      line-height: 45px;
+      margin-left: 15px;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: '';
+        background-image: url(../img/arrow-down.svg);
+        width: 28px;
+        height: 26px;
+        right: -40px;
+        top: 10px;
+      }
+    }
+  }
+}
+.purchase__content{
+  max-width: 250px;
+  width: 100%;
+  button{
+    text-transform: uppercase;
+    @include OpenSans;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding: 10px 35px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    &:focus{
+      outline: 3px solid $color-text;
+    }
+  }
+}
+.purchase__form-line{
+  margin-bottom: 35px;
+  input{
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 5px;
+    padding: 0 15px;
+    font-size: 22px;
+    line-height: 30px;
+    @include f300;
+    border: none;
+    border-bottom: 1px solid #000;
+    &::placeholder{
+      color: $color-text;
+      @include f300;
+    }
+  }
+  label{
+    display: block;
+    width: 100%;
+  }
+}
+// end purchase
 
 
 
