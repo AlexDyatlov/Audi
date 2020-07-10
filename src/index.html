@@ -7,11 +7,11 @@
   <!-- WRITE CODE HERE -->
   <section class="description">
     <div class="container">
-      <div class="description__title title">
+      <div class="description__title title" data-aos="zoom-in-up" data-aos-duration data-aos-delay="200">
         Характеристики
       </div>
-      <div class="description-box description-box--left">
-        <div class="description-box__info">
+      <div class="description-box description-box--left" data-aos="fade-up-right" data-aos-duration="1200" data-aos-delay="500">
+        <div class="description-box__info box__info--left">
           <div class="description-box__title">
             Лаконичность
           </div>
@@ -24,11 +24,11 @@
           </div>
         </div>
         <div class="description-box__images">
-          <img src="img/laconicism.png" alt="">
+          <img src="img/laconicism.png" alt="" data-aos="flip-up" data-aos-duration="1800" data-aos-delay="850">
         </div>
       </div>
-      <div class="description-box">
-        <div class="description-box__info">
+      <div class="description-box  description-box--right" data-aos="fade-up-left" data-aos-duration="1200" data-aos-delay="500">
+        <div class="description-box__info box__info--right">
           <div class="description-box__title">
             Двигатель
           </div>
@@ -41,11 +41,11 @@
           </div>
         </div>
         <div class="description-box__images description-box__border">
-          <img src="img/engine.png" alt="">
+          <img src="img/engine.png" alt="" data-aos="flip-down" data-aos-duration="1800" data-aos-delay="850">
         </div>
       </div>
-      <div class="description-box description-box--left">
-        <div class="description-box__info">
+      <div class="description-box description-box--left" data-aos="fade-up-right" data-aos-duration="1200" data-aos-delay="500">
+        <div class="description-box__info box__info--left">
           <div class="description-box__title">
             Настройка
           </div>
@@ -59,39 +59,41 @@
           </div>
         </div>
         <div class="description-box__images">
-          <img src="img/customization.png" alt="">
+          <img src="img/customization.png" alt="" data-aos="flip-up" data-aos-duration="1800" data-aos-delay="850">
         </div>
       </div>
     </div>
   </section>
   <section class="purchase">
     <div class="container">
-      <div class="purchase__title title">
+      <div class="purchase__title title" data-aos="fade-down-right">
         Заявка <span>на покупку</span>
       </div>
       <div class="purchase__content">
         <form>
-          <div class="purchase__form-line">
+          <div class="purchase__form-line" data-aos="zoom-in">
             <input type="text" placeholder="______________" required>
             <label>Имя и фамилия</label>
           </div>
-          <div class="purchase__form-line">
-            <input type="text" id="phone" placeholder="">
+          <div class="purchase__form-line" data-aos="zoom-in" data-aos-delay="350">
+            <input type="text" id="phone" required>
             <label>Телефон</label>
           </div>
-          <div class="purchase__form-line">
+          <div class="purchase__form-line" data-aos="zoom-in" data-aos-delay="400">
             <input type="email" placeholder="example@ex.com" required>
             <label>Электронная почта</label>
           </div>
-          <div class="purchase__form-line">
-            <input type="text" placeholder="Москва" required>
-            <label>Город</label>
+          <div class="purchase__form-row">
+            <div class="purchase__form-line" data-aos="zoom-in" data-aos-delay="450">
+              <input type="text" placeholder="Москва" required>
+              <label>Город</label>
+            </div>
+            <div class="purchase__form-line purchase__form-center" data-aos="zoom-in" data-aos-delay="550">
+              <input type="text" placeholder="______________" required>
+              <label>Дилерский центр</label>
+            </div>
           </div>
-          <div class="purchase__form-line">
-            <input type="text" placeholder="______________" required>
-            <label>Дилерский центр</label>
-          </div>
-          <button type="submit">Купить</button>
+          <button type="submit" data-aos="flip-right" data-aos-duration="1300" data-aos-delay="550">Купить</button>
         </form>
       </div>
     </div>

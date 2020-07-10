@@ -1,0 +1,130 @@
+@media (max-width: 1000px){
+  .description-box{
+    align-items: center;
+  }
+  .footer__inner{
+    display: block;
+  }
+  .footer__map{
+    max-width: 100%;
+  }
+  .footer__info{
+    max-width: 360px ;
+    margin-bottom: 20px;
+    min-width: 0;
+  }
+}
+@media (max-width: 850px){
+  .menu__list{
+    display: none;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #000;
+    a{
+      display: block;
+      padding: 17px 0;
+      border-bottom: 1px solid #fff;
+    }
+    li{
+      display: block;
+      & + li{
+        margin-left: 0;
+      }
+      &:first-child{
+        border-top: 1px solid #fff;
+      }
+    }
+  }
+.menu__btn {
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.menu__btnRotate.active {
+  transform: rotate(45deg);
+}
+.hmenu__btnRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#fff;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+.btn .top {
+  stroke-dasharray: 40 172;
+}
+.btn .middle {
+  stroke-dasharray: 40 111;
+}
+.btn .bottom {
+  stroke-dasharray: 40 172;
+}
+.btn.active .top {
+  stroke-dashoffset: -132px;
+}
+.btn.active .middle {
+  stroke-dashoffset: -71px;
+}
+  .btn.active .bottom {
+    stroke-dashoffset: -132px;
+  }
+}
+@media (max-width: 750px){
+  .purchase__form-row{
+    flex-wrap: wrap;
+  }
+  .purchase__form-center{
+    padding-left: 0;
+  }
+  .description-box{
+    flex-wrap: wrap-reverse;
+    padding: 0 20px;
+    &__info{
+      width: 100%;
+      padding: 0;
+    }
+    &__text{
+      margin-bottom: 20px;
+    }
+  }
+  .description-box--right .description-box__info{
+    order: 1;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 450px){
+  .title{
+    font-size: 28px;
+    line-height: 36px;
+    span{
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  .header__text {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+
+
+@media (min-width: 851px){
+  .menu__list{
+    display: block !important;
+  }
+}
