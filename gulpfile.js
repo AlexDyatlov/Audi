@@ -31,7 +31,7 @@ gulp.task("scss", function () {
 		.pipe(sourcemaps.init()) //инициализируем sourcemaps, чтобы он начинал записывать, что из какого файла берётся
 		.pipe(
 			sass({
-				outputStyle: "compressed",
+				outputStyle: "expanded",
 			}),
 		) //конвертируем scss в css и импортируем все импорты
 		.pipe(
@@ -111,6 +111,7 @@ gulp.task("script", function () {
 			"node_modules/jquery/dist/jquery.js",
 			"node_modules/imask/dist/imask.js",
 			"node_modules/aos/dist/aos.js",
+			"node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
 		])
 		.pipe(size())
 		.pipe(sourcemaps.init())
