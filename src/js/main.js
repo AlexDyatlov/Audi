@@ -1,12 +1,11 @@
 $(function(){
 
-  var element = document.getElementById('phone');
-  var maskOptions = {
-    mask: '+{7}(000)000-00-00',
-    lazy: false,
+  const element = document.getElementById('phone');
+  const maskOptions = {
+    mask: '+{7}(000)000-00-00'
   };
 
-  var mask = IMask(element, maskOptions);
+  const mask = IMask(element, maskOptions);
 
   $('.menu__btn').on('click', function(){
     this.classList.toggle('active')
@@ -16,11 +15,12 @@ $(function(){
   AOS.init({
     delay: 300,
     duration: 1000,
+    once: true
   });
 
 });
 
-var scroll = new SmoothScroll('a[href*="#"]',{
+const scroll = new SmoothScroll('a[href*="#"]',{
   speed: 700,
   speedAsDuration: true
 });

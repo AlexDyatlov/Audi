@@ -25,6 +25,7 @@
     background-color: #000;
     a{
       display: block;
+      min-height: 61px;
       padding: 17px 0;
       border-bottom: 1px solid #fff;
     }
@@ -80,6 +81,9 @@
   }
 }
 @media (max-width: 750px){
+  .header{
+    background: top right/cover no-repeat url('../img/header-bg-mobile.jpg');
+  }
   .purchase__form-row{
     flex-wrap: wrap;
   }
@@ -113,6 +117,12 @@
     span{
       font-size: 20px;
       line-height: 28px;
+      &::before{
+        width: 21px;
+        height: 25px;
+        right: -37px;
+        top: 0px;
+      }
     }
   }
   .header__text {

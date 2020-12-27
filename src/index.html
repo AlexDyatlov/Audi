@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 @@include('components/_head.html')
 
 <body>
   @@include('components/_header.html')
-  <!-- WRITE CODE HERE -->
   <section id="specifications" class="description">
     <div class="container">
-      <div class="description__title title" data-aos="zoom-in-up" data-aos-duration data-aos-delay="200">
+      <h2 class="description__title title" data-aos="zoom-in-up" data-aos-duration data-aos-delay="200">
         Характеристики
-      </div>
-      <div class="description-box description-box--left" data-aos="fade-up-right" data-aos-duration="1200" data-aos-delay="500">
+      </h2>
+      <div class="description-box description-box--left" data-aos="fade-up-right" data-aos-duration="1200"
+        data-aos-delay="500">
         <div class="description-box__info box__info--left">
           <div class="description-box__title">
             Лаконичность
@@ -24,10 +24,12 @@
           </div>
         </div>
         <div class="description-box__images">
-          <img src="img/laconicism.png" alt="" data-aos="flip-up" data-aos-duration="1800" data-aos-delay="850">
+          <img src="img/laconicism.jpg" alt="лаконичность" data-aos="flip-up" data-aos-duration="1800"
+            data-aos-delay="850">
         </div>
       </div>
-      <div class="description-box  description-box--right" data-aos="fade-up-left" data-aos-duration="1200" data-aos-delay="500">
+      <div class="description-box description-box--right" data-aos="fade-up-left" data-aos-duration="1200"
+        data-aos-delay="500">
         <div class="description-box__info box__info--right">
           <div class="description-box__title">
             Двигатель
@@ -41,10 +43,11 @@
           </div>
         </div>
         <div class="description-box__images description-box__border">
-          <img src="img/engine.png" alt="" data-aos="flip-down" data-aos-duration="1800" data-aos-delay="850">
+          <img src="img/engine.jpg" alt="двигатель" data-aos="flip-down" data-aos-duration="1800" data-aos-delay="850">
         </div>
       </div>
-      <div class="description-box description-box--left" data-aos="fade-up-right" data-aos-duration="1200" data-aos-delay="500">
+      <div class="description-box description-box--left" data-aos="fade-up-right" data-aos-duration="1200"
+        data-aos-delay="500">
         <div class="description-box__info box__info--left">
           <div class="description-box__title">
             Настройка
@@ -59,16 +62,17 @@
           </div>
         </div>
         <div class="description-box__images">
-          <img src="img/customization.png" alt="" data-aos="flip-up" data-aos-duration="1800" data-aos-delay="850">
+          <img src="img/customization.jpg" alt="настройка" data-aos="flip-up" data-aos-duration="1800"
+            data-aos-delay="850">
         </div>
       </div>
     </div>
   </section>
   <section id="purchase" class="purchase">
     <div class="container">
-      <div class="purchase__title title" data-aos="fade-down-right">
+      <h2 class="purchase__title title" data-aos="fade-down-right">
         Заявка <span>на покупку</span>
-      </div>
+      </h2>
       <div class="purchase__content">
         <form>
           <div class="purchase__form-line" data-aos="zoom-in">
@@ -76,7 +80,7 @@
             <label>Имя и фамилия</label>
           </div>
           <div class="purchase__form-line" data-aos="zoom-in" data-aos-delay="350">
-            <input type="text" id="phone" required>
+            <input type="text" id="phone" placeholder="+7 (___)___-__-__" required>
             <label>Телефон</label>
           </div>
           <div class="purchase__form-line" data-aos="zoom-in" data-aos-delay="400">
@@ -98,9 +102,6 @@
       </div>
     </div>
   </section>
-
-
-  <!-- STOP WRITE CODE -->
   @@include('components/_footer.html')
   @@include('components/_scripts.html')
 </body>
