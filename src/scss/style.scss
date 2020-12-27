@@ -5,9 +5,7 @@
 // start header
 .header{
   height: 100vh;
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: cover;
+  background: top right/cover no-repeat url('../img/header-bg.jpg');
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -26,6 +24,11 @@
   align-items: center;
   &__btn{
     display: none;
+  }
+  &__wrapper{
+    min-height: 27px;
+    display: flex;
+    align-items: flex-end;
   }
 }
 .menu__list{
@@ -222,9 +225,11 @@
       position: relative;
       &::before{
         position: absolute;
-        content: "\f107";
-        font-family: 'icomoon';
-        right: -35px;
+        content: '';
+        background: center/cover no-repeat url('../img/icons/arrow-down.svg');
+        width: 25px;
+        height: 45px;
+        right: -40px;
         top: 3px;
       }
     }
@@ -242,7 +247,7 @@
     padding: 10px 35px;
     cursor: pointer;
     letter-spacing: 2px;
-    &:focus{
+    &:focus, &:hover{
       outline: 3px solid $color-text;
     }
   }
@@ -359,10 +364,10 @@
   }
 }
 .footer__list{
-  li{
+  &-item{
     margin-bottom: 10px;
   }
-  a{
+  &-link{
     font-size: 18px;
     line-height: 26px;
     color: #000;
@@ -371,25 +376,22 @@
     position: relative;
     &::before{
       position: absolute;
-      font-family: 'icomoon';
+      content: '';
+      background: center/cover no-repeat url('../img/icons/phone.svg');
+      width: 18px;
+      height: 20px;
       left: 0;
+      top: 2px;
     }
   }
 }
-.footer__phone{
-  &::before{
-    content: "\e942";
-  }
+.footer__email::before{
+  background: center/cover no-repeat url('../img/icons/message.svg');
+  width: 18px;
+  height: 18px;
 }
-.footer__email{
-  &::before{
-    content: "\f003";
-  }
-}
-.footer__addess{
-  &::before{
-    content: "\e948";
-  }
+.footer__addess::before{
+  background: center/cover no-repeat url('../img/icons/marker.svg');
 }
 .footer__map {
   padding-top: 10px;
@@ -398,6 +400,7 @@
   iframe{
     width: 100%;
     min-height: 240px;
+    border: none;
   }
 }
 .footer__copy{
