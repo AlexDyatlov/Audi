@@ -16,13 +16,13 @@
 }
 @media (max-width: 850px){
   .menu__list{
-    display: none;
     position: absolute;
-    top: 140px;
+    top: -340px;
     left: 0;
     right: 0;
     text-align: center;
     background-color: #000;
+    transition: top 0.4s;
     a{
       display: block;
       min-height: 61px;
@@ -43,9 +43,6 @@
   display: block;
   -webkit-tap-highlight-color: transparent;
   transition: transform 400ms;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 .menu__btnRotate.active {

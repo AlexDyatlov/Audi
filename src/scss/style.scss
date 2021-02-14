@@ -33,6 +33,10 @@
 }
 .menu__list{
   z-index: 5;
+  &.active{
+    top: 140px;
+    transition: top 0.4s;
+  }
   li{
     display: inline-block;
     & + li{
