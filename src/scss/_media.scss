@@ -45,12 +45,6 @@
   transition: transform 400ms;
   user-select: none;
 }
-.menu__btnRotate.active {
-  transform: rotate(45deg);
-}
-.hmenu__btnRotate180.active {
-  transform: rotate(180deg);
-}
 .line {
   fill:none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
